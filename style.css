@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+nav {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 5vh;
+  align-items: center;
+}
+nav a {
+  color: #262665;
+}
+nav a:hover {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #262665;
+}
+.navlinks {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  font-size: 13px;
+}
+.users {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+
+  font-size: 13px;
+}
+.users a {
+  margin: 0 15px;
+}
+.sign {
+  font-size: 13px;
+  display: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+  margin-top: 5%;
+}
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a:hover {
+  font-weight: bold;
+}
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* .mobile-nav {
+  display: none;
+} */
+/* .mobile-nav ul {
+  width: 100%;
+}
+.mobile-nav li {
+  text-align: center;
+  line-height: 1.7;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.mobile-nav li a {
+  color: black;
+  width: 100%;
+} */
+/* banner */
+.banner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+.image {
+  height: 50vh;
+  width: 50%;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+.ban-desc {
+  width: 40%;
+  margin-left: 10%;
+}
+.ban-desc p {
+  margin: 20px 0;
+  width: 90%;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+.buttons :nth-child(1) {
+  border: 1px solid black;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: black;
+}
+.buttons :nth-child(1):hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.buttons :nth-child(2) {
+  color: black;
+}
+.buttons :nth-child(2):hover {
+  border-bottom: 3px solid black;
+}
+/* mid */
+.mid {
+  width: 60%;
+  margin: auto;
+}
+.mid ul {
+  display: flex;
+  justify-content: space-between;
+}
+.mid ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mid ul li a {
+  margin-top: 10px;
+  text-align: center;
+  width: 80%;
+  color: black;
+}
+.mid ul li a:hover {
+  text-decoration: underline;
+}
+.mid ul li img {
+  height: 40px;
+  width: 40px;
+}
+/* bundle */
+
+.bundle {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.bundles {
+  width: 24%;
+}
+.bundles img {
+  width: 100%;
+}
+.bundles h4 {
+  margin-top: 30px;
+}
+.bundles p {
+  margin: 20px 0;
+}
+.bundles a {
+  color: #1867c3;
+  font-weight: 600;
+}
+.bundles a:hover {
+  border-bottom: 2px solid #1867c3;
+}
+/* gamepass */
+.gamepass {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  background: url('/gamepass/gamepass.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+.game-desc {
+  width: 45%;
+  padding: 0 100px;
+  color: #f3f3f3;
+}
+.game-desc a {
+  color: #f3f3f3;
+}
+.game-desc p {
+  margin: 20px 0px;
+}
+.game-desc :nth-child(3) {
+  margin-right: 20px;
+  color: #000052;
+  padding: 10px 20px;
+  background-color: #f3f3f3;
+  font-weight: 600;
+}
+.game-desc :nth-child(3):hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* business */
+.business {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.businesses {
+  width: 24%;
+}
+.businesses img {
+  width: 100%;
+}
+.businesses h4 {
+  margin-top: 30px;
+}
+.businesses p {
+  margin: 20px 0;
+}
+.businesses a {
+  color: #0078cf;
+  font-weight: 500;
+}
+.businesses a:hover {
+  border-bottom: 2px solid #0078cf;
+}
+.covid {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e6e6e6;
+  padding: 24px;
+  color: #000016;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.covid p {
+  margin: 10px 0;
+}
+.covid a {
+  color: #000016;
+  font-weight: 500;
+}
+.covid a:hover {
+  border-bottom: 2px solid #000016;
+}
+/* sol */
+.sol-lew {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.sol-lew .image {
+  width: 60%;
+  height: 100%;
+}
+.sol-lew .image img {
+  width: 100%;
+  height: 100%;
+}
+.sol-desc {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sol-desc p {
+  margin: 20px 0;
+}
+.sol-button {
+  margin-top: 20px;
+}
+.sol-desc a {
+  border: 1px solid black;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: black;
+  font-weight: 500;
+}
+.sol-desc a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+/* footer */
+.footer {
+  margin-top: 50px;
+  padding: 40px 0;
+  background-color: #f2f2f2;
+}
+.footer-links {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links ul li {
+  line-height: 1.7;
+}
+.footer-links ul li a {
+  color: #616161;
+  font-size: 11px;
+}
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+.topic {
+  font-size: 15px;
+}
+.bottom-links {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.globe {
+  width: 20%;
+  font-size: 11px;
+}
+.bottom-link {
+  align-items: center;
+  width: 80%;
+}
+.bottom-link ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom-link ul li {
+  font-size: 11px;
+  margin: 0 10px;
+}
+.globe a,
+.bottom-link ul li a {
+  color: #616161;
+}
+.globe a:hover,
+.bottom-link ul li a:hover {
+  text-decoration: underline;
+}
+/* media queries */
+@media only screen and (max-width: 1420px) {
+  .navlinks {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navlinks {
+    width: 75%;
+  }
+  .image {
+    height: 20vh;
+  }
+  .mid {
+    margin-top: 5%;
+  }
+  .game-desc {
+    width: 70%;
+  }
+  .footer-links {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .logo-container {
+    display: none;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .bottom-links {
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 918px) {
+  nav {
+    display: none;
+  }
+  .topnav {
+    display: contents;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mid {
+    width: 80%;
+    margin-top: 5%;
+  }
+  .mid ul {
+    flex-direction: column;
+  }
+  .mid ul li {
+    margin: 10px 0;
+  }
+  .banner {
+    flex-direction: column;
+    width: 100%;
+  }
+  .buttons {
+    flex-direction: column;
+    width: 76%;
+  }
+  .buttons a {
+    margin: 10px 0;
+  }
+  .image {
+    width: 35%;
+  }
+  .ban-desc p {
+    width: 90%;
+  }
+  .navlinks {
+    width: 80%;
+  }
+  .users {
+    display: none;
+  }
+  .sign {
+    display: contents;
+  }
+  .sign a {
+    margin-left: 10%;
+  }
+  .gamepass,
+  .covid {
+    width: 100%;
+  }
+  .bottom-link {
+    display: none;
+  }
+  .globe a {
+    display: contents;
+  }
+}
+@media only screen and (max-width: 375px) {
+  nav {
+    display: none;
+  }
+  /* .mobile-nav {
+    display: contents;
+  } */
+  .topnav #myLinks {
+    margin-top: 10%;
+  }
+  .banner {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ban-desc {
+    width: 100%;
+  }
+  .bundle {
+    flex-direction: column;
+  }
+  .bundles {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .banner {
+    text-align: center;
+  }
+  .buttons {
+    flex-direction: column;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons :nth-child(1) {
+    margin-bottom: 5%;
+  }
+  .game-desc {
+    width: 100%;
+  }
+  .business {
+    flex-direction: column;
+  }
+  .businesses {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .game-desc h1 {
+    font-size: 18px;
+  }
+  .game-desc p {
+    font-size: 14px;
+  }
+  .covid h1 {
+    font-size: 18px;
+  }
+  .covid p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .sol-lew {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sol-lew .image {
+    width: 100%;
+  }
+  .sol-desc {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .sol-desc h1 {
+    font-size: 18px;
+  }
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links ul {
+    margin-bottom: 10px;
+  }
+  .bottom-links {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .bottom-link ul {
+    flex-wrap: wrap;
+    margin: 0 10px;
+  }
+}
